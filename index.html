@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Patricia Starck Bernardi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+            <header>
+                <h1 class="logo">Port<span>fólio</span></h1>
+            </header>
+            
+            <div class="menu">
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#ferramentas">Ferramentas</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+            <button onclick="animarMenu()" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+        </div>
+        
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Ferramentas</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+            </nav>        
+        </div>
+
+        <section class="apresentacao">            
+            <div class="apresentacao-txt">
+                <h2>Oi, eu sou Patricia</h2>                
+                <h3>Análise e Desenvolv. de Sistemas</h3>      
+                <h4>Acadêmica<h4>          
+            </div> 
+            <div class="astronauta">
+                <img src="imagens/astronauta.png" alt="">
+            </div>           
+            <div class="globo"></div>            
+        </section>
+        
+        <div class="pagina-topo"><span>Sobre mim</span></div>            
+        <section id="sobre-mim">
+                <div class="texto-esquerdo">                     
+                    <p >Meu nome é Patricia Starck Bernardi, nasci e moro em Petrópolis e sou nutricionista em transição de carreira. Comecei a me interessar pela área de TI através de HTML e CSS curso que fiz de maneira despretenciosa e que acabou me despertando cada vez mais curiosidade e vontade de aprender. Atualmente estou matriculada no segundo módulo do primeiro período do curso de Análise e Desenvolvimento de Sistemas, na Universidade de Vassouras.</p>
+                </div>
+                <div class="img-direita">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=461&q=80"  alt="">
+                </div>
+            </section>
+        
+        <a id="link-topo" class="link-topo" href="" title="topo da página"><img src="imagens/rocket.png" alt=""></a>
+        <section class="habilidades">
+            <div class="card-container">        
+                    <div class="pagina-topo"><span>Habilidades</span></div>
+                    <div class="card">
+                        <img src="https://logospng.org/download/html-5/logo-html-5-512.png" alt="">
+                        <div class="legenda"><p>HTML</p></div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
+                        <div class="legenda"><p>CSS</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-512.png" alt="">
+                        <div class="legenda"><p>JAVASCRIPT</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="https://logospng.org/download/html-5/logo-html-5-512.png" alt="">
+                        <div class="legenda"><p>HTML</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
+                        <div class="legenda"><p>CSS</p></div>            
+                    </div>
+            
+                    <div class="card">
+                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
+                        <div class="legenda"><p>CSS</p></div>            
+                    </div>
+            
+                    <div class="card">
+                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
+                        <div class="legenda"><p>CSS</p></div>            
+                    </div>
+                </div>
+            </section>
+            <section>
+               
+                <div class="projeto_capa">
+                    <div class="pagina-topo"><span>Projetos</span></div>   
+
+                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/lp_saude_mental.png" class="lp_capa" alt="">
+                        <legend style="text-align: center;">Landing page saúde mental</legend>
+
+                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
+                        <legend style="text-align: center;"></legend>
+
+                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
+                        <legend style="text-align: center;"></legend>
+
+                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
+                            <legend style="text-align: center;"></legend>
+
+                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
+                        <legend style="text-align: center;"></legend>
+                    
+                    </a>
+                </div>
+
+
+            </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+float animation
+
+.astronauta img {
+    max-width: 640px;
+    transform: translate(0px);
+    animation: float 5s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+
+.astronauta img {	
+        -webkit-animation: roll-in-left 3s ease-out 1s both;
+                animation: roll-in-left 3s ease-out 1s both;
+
+        -webkit-animation: roll-out-right 1s ease-in both;
+                animation: roll-out-right 1s ease-in both;
+}
+
+
+  margin-top: -20px;
+    font-size: 2rem;  
+    width: 100%;
+    text-align: center;
+    height: 2px;
+    background-color: #333;
