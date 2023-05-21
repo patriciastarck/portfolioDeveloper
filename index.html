@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="container-top">
+        <div class="container-blur">
             <header>
                 <h1 class="logo">Port<span>fólio</span></h1>
             </header>
@@ -25,7 +25,7 @@
                 </nav>
             </div>
             <button onclick="animarMenu()" id="btn-menu">
-                <span class="linha"></span>
+                <span class="linha"></span> <!--3 linhas -->
                 <span class="linha"></span>
                 <span class="linha"></span>
             </button>
@@ -54,7 +54,10 @@
             <div class="globo"></div>            
         </section>
         
-        <div class="pagina-topo"><span>Sobre mim</span></div>            
+        <div class="pagina-topo">
+            <h2>Sobre mim</h2> 
+        </div>       
+             
         <section id="sobre-mim">
                 <div class="texto-esquerdo">                     
                     <p >Meu nome é Patricia Starck Bernardi, nasci e moro em Petrópolis e sou nutricionista em transição de carreira. Comecei a me interessar pela área de TI através de HTML e CSS curso que fiz de maneira despretenciosa e que acabou me despertando cada vez mais curiosidade e vontade de aprender. Atualmente estou matriculada no segundo módulo do primeiro período do curso de Análise e Desenvolvimento de Sistemas, na Universidade de Vassouras.</p>
@@ -65,52 +68,40 @@
             </section>
         
         <a id="link-topo" class="link-topo" href="" title="topo da página"><img src="imagens/rocket.png" alt=""></a>
-        <section class="habilidades">
-            <div class="card-container">        
-                    <div class="pagina-topo"><span>Habilidades</span></div>
+        
+        <section class="habilidades">            
+                
+            <div class="pagina-topo" style="color: rgb(32, 16, 177); text-align: center; font-size: 1.5rem;" >Habilidades</div>
+            <div class="container-card" target="_blank" >    
                     <div class="card">
-                        <img src="https://logospng.org/download/html-5/logo-html-5-512.png" alt="">
+                        <img src="https://logospng.org/download/html-5/logo-html-5-512.png" title="HTML é uma linguagem de marcação, usada para definir a estrutura do seu conteúdo." alt="">
                         <div class="legenda"><p>HTML</p></div>
                     </div>
                     
                     <div class="card">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
+                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" title="é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias." alt="">
                         <div class="legenda"><p>CSS</p></div>
                     </div>
                     <div class="card">
-                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-512.png" alt="">
+                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-512.png" title="linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional)." alt="">
                         <div class="legenda"><p>JAVASCRIPT</p></div>
                     </div>
                     <div class="card">
-                        <img src="https://logospng.org/download/html-5/logo-html-5-512.png" alt="">
-                        <div class="legenda"><p>HTML</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
-                        <div class="legenda"><p>CSS</p></div>            
-                    </div>
-            
-                    <div class="card">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
-                        <div class="legenda"><p>CSS</p></div>            
-                    </div>
-            
-                    <div class="card">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-512.png" alt="">
-                        <div class="legenda"><p>CSS</p></div>            
-                    </div>
+                        <img src="https://w7.pngwing.com/pngs/452/495/png-transparent-react-javascript-angularjs-ionic-github-text-logo-symmetry-thumbnail.png" title="biblioteca para construção de interfaces de usuário." alt="">
+                        <div class="legenda"><p>REACT</p></div>
+                    </div>                    
                 </div>
             </section>
             <section>
                
+                <div class="pagina-topo" style="text-align: center; width: 100%; background-color: rgb(50, 196, 186);">Projetos</div>   
                 <div class="projeto_capa">
-                    <div class="pagina-topo"><span>Projetos</span></div>   
 
                     <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/lp_saude_mental.png" class="lp_capa" alt="">
-                        <legend style="text-align: center;">Landing page saúde mental</legend>
+                        <legend style="text-align: center; text-decoration: none;">Landing page saúde mental</legend>
 
-                    <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
-                        <legend style="text-align: center;"></legend>
+                    <a href="https://patriciastarck.github.io/organicFarm/" target="_blank"><img src="imagens/Screenshot.png" class="lp_capa" alt="">
+                        <legend style="text-align: center;">Landing page Organic Farm</legend>
 
                     <a href=" https://patriciastarck.github.io/saude-mental/" target="_blank"><img src="imagens/placa.png" class="lp_capa" alt="">
                         <legend style="text-align: center;"></legend>
@@ -123,8 +114,6 @@
                     
                     </a>
                 </div>
-
-
             </section>
     </div>
 

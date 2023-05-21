@@ -8,7 +8,6 @@ function animarMenu() {
     btnAnimar.classList.toggle('ativo')
 }
 
-
 window.addEventListener("scroll", () => {
     document.querySelectorAll(".texto-esquerdo").forEach((animacao, index) => {
         if(animacao.getBoundingClientRect().top < window.innerHeight - 50) {

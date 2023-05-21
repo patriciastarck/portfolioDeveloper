@@ -22,16 +22,19 @@
 }
 
 body {
+    width: 100vw;
     overflow-x: hidden;
+    /* background-color: lightgreen; */
 }
 
 .container {
-    background-image: url(imagens/bg-bluesky.jpg);     
+    background-image: url(imagens/bg-bluesky.jpg);       
     animation: rotate 30s linear infinite;
+    width: 100vw;
     height: 100vh; 
 }
 
-.container-top {   
+.container-blur {   
     backdrop-filter: blur(5px) ;    
     padding: 0px 60px;     
     display: flex;   
@@ -136,14 +139,7 @@ button.ativo .linha:nth-child(2){
 
 /*----------------------------------------------*/
 
-.apresentacao {    
-    display: flex;    
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 100vh;   
-    padding-bottom: 100px; 
-}
+
 
 .globo {
     background-image: url(imagens/globo.jpeg);
@@ -160,6 +156,17 @@ button.ativo .linha:nth-child(2){
     to {
         background-position: 100%;
     }
+}
+
+
+
+.apresentacao {    
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;   
+    padding-bottom: 100px; 
 }
 
 .apresentacao-txt {
@@ -221,19 +228,15 @@ button.ativo .linha:nth-child(2){
 #sobre-mim {
     background-color: white;
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     font-size: 1.2rem;
     line-height: 1.5rem;
     display: flex;  
     flex: 1 1;  
-    align-items: center;
-    
-        
+    align-items: center;      
 }
 
-.img-direita {
-   
-    
+.img-direita {   
     padding: 50px 100px 50px 50px;
     /* background-size: cover; */
 }
@@ -249,14 +252,6 @@ button.ativo .linha:nth-child(2){
     padding: 50px 50px 50px 100px;
     margin: auto;
 }
-
-.pagina-topo {     
-    font-size: 2rem;  
-    width: 100%;
-    text-align: center;
-    height: 2px;
-    background-color: #333;   
-} 
 
 div.pagina-topo span {    
     background-color: white;
@@ -339,10 +334,11 @@ opacity: 1;
   }
 /*-----------------fim efeito astronauta-------------------*/
 
-.card-container {  
+.container-card {  
     background-image: url(imagens/vecteezy_galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.9;
     height: 100vh;
     padding: 1rem;
     overflow-y: hidden;
@@ -385,13 +381,13 @@ opacity: 1;
     text-align: center;
     padding: 20px;
 }
-.cards {
+/* .cards {
     
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
+  } */
   
   .card {        
     margin: 10px 20px;
@@ -474,7 +470,24 @@ div.pagina-topo2 span {
     width: 250px;
 }
 
-@media screen and (max-width: 1030px) {
+.card-container .pagina-topo span {
+    background-color: rgba(0, 0, 0, 0.737);
+    color: white;
+}
+  
+.card-container .pagina-topo {
+    margin-top: 40px;       
+    width: 100%;
+    text-align: center;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.861);
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px) {
     .menu, .social {
         display: none;
     }
@@ -490,18 +503,90 @@ div.pagina-topo2 span {
 
     button{
         display: block;
-    }    
+    }  
+
+    .container {
+        width: 100vw;
+    }
+
+    .container-blur {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .globo {
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .apresentacao {        
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .apresentacao-txt h3, .apresentacao h2  {
+        font-size: 1.5rem;
+    }
+
+    .pagina-topo {
+        text-align: center;
+    }
+
+    #sobre-mim {
+        display: block;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px 0 40px 0 ;        
+    }
+
+    .img-direita { 
+        padding: 0;
+        margin: 0 auto;          
+        /* padding: 20px 100px 50px 50px; */}
+
+    .img-direita img {
+        width: 50%;
+        text-align: center;
+        /* margin-left: 80px; */
+    }
+
+    .texto-esquerdo {
+        font-size: 0.8rem;        
+        margin-left: -35px ;
+    }
+
+    .container-card {
+        padding: 0 30px;
+        display: block;
+        
+        height: 100%;
+    }
+
+    .card {
+        margin: 20px auto;
+        width: 140px;
+        padding: 20px;
+        height: 180px;
+    }
+    
+    .card img {
+        width: 120px;
+            }
+
+    .card .legenda {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .projeto_capa {
+        padding: 100px;
+    }
 }
 
-.card-container .pagina-topo span {
-    background-color: rgba(0, 0, 0, 0.737);
-    color: white;
-}
-  
-.card-container .pagina-topo {
-    margin-top: 40px;       
-    width: 100%;
-    text-align: center;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.861);
-}
