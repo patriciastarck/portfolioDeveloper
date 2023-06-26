@@ -299,7 +299,7 @@ div.pagina-topo span {
 /*------- FIM EFEITO APARECER------------------*/
 
 /* -------------EFEITO ASTRONAUTA -----------*/
-.astronauta {
+/* .astronauta {
     position: absolute;    
     min-height: 100vh;
     display: flex;
@@ -329,9 +329,9 @@ opacity: 1;
     100% {
       -webkit-transform: translateX(700px) rotate(0deg);
               transform: translateX(700px) rotate(0deg);
-      opacity: 1;
+      opacity: 0;
     }
-  }
+  } */
 /*-----------------fim efeito astronauta-------------------*/
 
 .container-card {  
@@ -348,6 +348,7 @@ opacity: 1;
     align-items: center;
     gap: .8rem;
     animation: rotate 40s linear infinite;     
+    
 }
 
 @keyframes rotate {
@@ -372,6 +373,7 @@ opacity: 1;
 
 .card img {
     width: 150px;
+    
 }
 
 .card .legenda {
@@ -487,13 +489,9 @@ div.pagina-topo2 span {
 
 /*-----------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 900px) {
-    .menu, .social {
+/*medi@a screen and (max-width: 960px) {
+    .menu {
         display: none;
-    }
-
-    .logo {
-        width: 100%;
     }
 
     .menu-mobile.abrir {
@@ -510,8 +508,8 @@ div.pagina-topo2 span {
     }
 
     .container-blur {
-        width: 100%;
-        display: flex;
+        
+        display: none;
         justify-content: space-between;
     }
     
@@ -525,6 +523,10 @@ div.pagina-topo2 span {
         width: 100vw;
         height: 100vh;
         margin: 0 auto;
+    }
+
+    .apresentacao-txt {
+        width: 100%;
     }
 
     .apresentacao-txt h3, .apresentacao h2  {
@@ -587,6 +589,45 @@ div.pagina-topo2 span {
 
     .projeto_capa {
         padding: 100px;
+    } 
+
+    /* @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-280px) rotate(-540deg);
+                  transform: translateX(-200px) rotate(-540deg);
+          opacity: 0;
+        }
+    
+        5% {
+            -webkit-transform: translateX(-280px) rotate(-540deg);
+            transform: translateX(-200px) rotate(-540deg);
+    opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateX(280px) rotate(0deg);
+                  transform: translateX(250px) rotate(0deg);
+          opacity: 0;
+        }
+      } */
+
+      #link-topo {
+        text-decoration: none;    
+        color: #fff;    
+        padding: 5px;
+        border-radius: 50%;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;     
+          
+    }
+    
+    #link-topo img {
+        width: 50px; 
+        z-index: 1;   
+    }
+    
+    #link-topo img:hover {
+        width: 60px;
     }
 }
 

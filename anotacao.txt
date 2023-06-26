@@ -36,3 +36,178 @@ float animation
     text-align: center;
     height: 2px;
     background-color: #333;
+
+
+
+    VOU APAGAR TD O QUERY 
+    @media screen and (max-width: 600px) {
+    .menu, .social {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu-mobile.abrir {
+        visibility: visible;
+        height: calc(100vh - 77px);
+    }
+
+    button{
+        display: block;
+    }  
+
+    .container {
+        width: 100vw;
+    }
+
+    .container-blur {
+        
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .globo {
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .apresentacao {        
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .apresentacao-txt {
+        width: 100%;
+    }
+
+    .apresentacao-txt h3, .apresentacao h2  {
+        font-size: 1.5rem;
+    }
+
+    .pagina-topo {
+        text-align: center;
+    }
+
+    #sobre-mim {
+        display: block;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px 0 40px 0 ;        
+    }
+
+    .img-direita { 
+        padding: 0;
+        margin: 0 auto;          
+        /* padding: 20px 100px 50px 50px; */}
+
+    .img-direita img {
+        width: 50%;
+        text-align: center;
+        /* margin-left: 80px; */
+    }
+
+    .texto-esquerdo {
+        font-size: 0.8rem;        
+        margin-left: -35px ;
+    }
+
+    .container-card {
+        padding: 0 30px;
+        display: block;
+        
+        height: 100%;
+    }
+
+    .card {
+        margin: 20px auto;
+        width: 140px;
+        padding: 20px;
+        height: 180px;
+    }
+    
+    .card img {
+        width: 120px;
+            }
+
+    .card .legenda {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .projeto_capa {
+        padding: 100px;
+    }
+
+    /* @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-280px) rotate(-540deg);
+                  transform: translateX(-200px) rotate(-540deg);
+          opacity: 0;
+        }
+    
+        5% {
+            -webkit-transform: translateX(-280px) rotate(-540deg);
+            transform: translateX(-200px) rotate(-540deg);
+    opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateX(280px) rotate(0deg);
+                  transform: translateX(250px) rotate(0deg);
+          opacity: 0;
+        }
+      } */
+
+      #link-topo {
+        text-decoration: none;    
+        color: #fff;    
+        padding: 5px;
+        border-radius: 50%;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;     
+          
+    }
+    
+    #link-topo img {
+        width: 50px; 
+        z-index: 1;   
+    }
+    
+    #link-topo img:hover {
+        width: 60px;
+    }
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+/* CSS for desktop screens */
+.container {
+  width: 960px;
+}
+
+/* CSS for tablet screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* CSS for mobile screens */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+Imagens responsivas: use técnicas CSS, como max-width: 100%, para garantir que as imagens sejam reduzidas proporcionalmente em telas menores. Isso evita que as imagens transbordem ou causem rolagem horizontal.
+img {
+  max-width: 100%;
+  height: auto;
+}
